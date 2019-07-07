@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent">
+<EditText
+    android:layout_width="320dp"
+    android:layout_height="50dp"
+    android:id="@+id/edittext"
+    android:hint="Enter Address, City or Zip Code"
+    android:textColor="#000"
+    android:background="@drawable/border2"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="10dp"
+    />
+
+<ImageButton
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:src="@drawable/ic_action_name"
+    android:background="@drawable/border"
+    android:textColor="@color/white"
+    android:onClick="onMapSearch"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="20dp"/>
+
+</LinearLayout>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="550dp" />
+
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="16dp"
+        android:textColor="@color/DarkRed"
+        android:text="Hello There."
+        android:gravity="center"
+        android:layout_below="@+id/button_location"
+        android:background="#EBEDEF"
+        android:elevation="10dp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:scrollHorizontally="true"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:text="GET Location"
+        android:id="@+id/b1"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

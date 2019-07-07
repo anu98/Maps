@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+
+    <com.esri.arcgisruntime.mapping.view.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="595dp"
+
+        >
+    </com.esri.arcgisruntime.mapping.view.MapView>
+
+
+
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="16dp"
+        android:textColor="@color/DarkRed"
+        android:gravity="center"
+        android:background="#EBEDEF"
+        android:text="Hello World"
+        android:elevation="10dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:text="GET Location"
+        android:textColor="@color/white"
+        android:elevation="10dp"
+       />
+</LinearLayout>
